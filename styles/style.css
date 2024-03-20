@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a1a;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #ff9933;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+#controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background: #ff0000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  /* Make buttons round */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  /* Added transform for hover effect */
+  font-size: 18px;
+  width: 50px;
+}
+
+button:hover {
+  background: #00e1ff;
+  /* Changed hover color to cyan */
+  transform: scale(1.1);
+  /* Enlarge button on hover */
+}
+
+#playlist {
+  text-align: left;
+  padding: 10px;
+  background: #2a2a2a;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#playlist>div {
+  padding: 10px;
+  border-bottom: 1px solid #444c5b;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#playlist>div:last-child {
+  border-bottom: none;
+}
+
+#playlist>div:hover {
+  background: #444c5b;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header img {
+    max-width: 80px;
+  }
+
+  #controls {
+    margin-top: 10px;
+  }
+
+  button {
+    padding: 8px;
+    width: 40px;
+  }
+
+  #playlist {
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  #playlist>div {
+    padding: 5px;
+  }
+}
+
+#footer a {
+  color: red;
+  
+}
